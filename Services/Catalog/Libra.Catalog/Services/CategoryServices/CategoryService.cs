@@ -19,8 +19,8 @@ namespace Libra.Catalog.Services.CategoryServices
         }
         public async Task CreateCategoryAsync(CreateCategoryDto createCategoryDto)
         {
-           var value = _mapper.Map<Category>(createCategoryDto);
-            await _categoryCollection.InsertOneAsync(value);
+           var values = _mapper.Map<Category>(createCategoryDto);
+            await _categoryCollection.InsertOneAsync(values);
         }
 
         public async Task DeleteCategoryAsync(string id)

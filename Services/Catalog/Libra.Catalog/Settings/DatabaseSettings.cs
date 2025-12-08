@@ -1,6 +1,6 @@
 ﻿namespace Libra.Catalog.Settings
 {
-    public class DatabaseSettings
+    public class DatabaseSettings:IDatabaseSettings
     {
         public string CategoryCollectionName { get; set; }
         public string BookCollectionName { get; set; }

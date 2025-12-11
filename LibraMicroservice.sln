@@ -14,6 +14,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libra.Catalog", "Services\Catalog\Libra.Catalog\Libra.Catalog.csproj", "{04FE536B-1581-08A7-A215-9932DF538A81}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Discount", "Discount", "{3B5F82A7-8E50-4B62-A0D9-1C72BE2CCEBF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Libra.Discount", "Services\Discount\Libra.Discount\Libra.Discount.csproj", "{1C97049B-FCA5-43C3-81E0-E5F4F0F8F1AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +28,10 @@ Global
 		{04FE536B-1581-08A7-A215-9932DF538A81}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{04FE536B-1581-08A7-A215-9932DF538A81}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{04FE536B-1581-08A7-A215-9932DF538A81}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C97049B-FCA5-43C3-81E0-E5F4F0F8F1AA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C97049B-FCA5-43C3-81E0-E5F4F0F8F1AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C97049B-FCA5-43C3-81E0-E5F4F0F8F1AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C97049B-FCA5-43C3-81E0-E5F4F0F8F1AA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -31,6 +39,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{24DDDBBB-A4DE-4BFB-B703-61286E17999B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{04FE536B-1581-08A7-A215-9932DF538A81} = {24DDDBBB-A4DE-4BFB-B703-61286E17999B}
+		{3B5F82A7-8E50-4B62-A0D9-1C72BE2CCEBF} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{1C97049B-FCA5-43C3-81E0-E5F4F0F8F1AA} = {3B5F82A7-8E50-4B62-A0D9-1C72BE2CCEBF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5959C77B-C25B-4BE2-AC5B-A4F6F6463778}

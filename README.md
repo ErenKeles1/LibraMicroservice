@@ -32,7 +32,7 @@ The project is being developed in phases. Below is the technology stack planned 
 | Service Name | Database | Responsibility | Status |
 | :--- | :--- | :--- | :--- |
 | **Catalog Service** | MongoDB | Manages Books, Authors, and Categories. | ✅ Completed |
-| **Discount Service** | PostgreSQL | Manages Coupons and Discounts (Dapper). | 🚧 In Progress |
+| **Discount Service** | MSSQL | Manages Coupons and Discounts (Dapper). | ✅ Completed |
 | **Basket Service** | Redis | Temporary cart storage for users. | 📅 Planned |
 | **Order Service** | MSSQL | Handles order placement (CQRS Pattern). | 📅 Planned |
 | **Identity Service** | SQL Server | Centralized Auth & Token Management. | 📅 Planned |

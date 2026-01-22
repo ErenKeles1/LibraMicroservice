@@ -1,7 +1,29 @@
+using Libra.Order.Application.Features.CQRS.Handlers.AddressHandlers;
+using Libra.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers;
+using Libra.Order.Application.Interfaces;
+using Libra.Order.Application.Services;
+using Libra.Order.Presistance.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+builder.Services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+builder.Services.AddApplicationService(builder.Configuration);
+#region
+builder.Services.AddScoped<GetAddressQueryHandler>();
+builder.Services.AddScoped<GetAddressByIdQueryHandler>();
+builder.Services.AddScoped<CreateAddressCommandHandler>();
+builder.Services.AddScoped<UpdateAddressCommandHandler>();
+builder.Services.AddScoped<RemoveAddressCommandHandler>();
+
+
+builder.Services.AddScoped<GetOrderDetailQueryHandler>();
+builder.Services.AddScoped<GetOrderDetailByIdQueryHandler>();
+builder.Services.AddScoped<CreateOrderDetailCommandHandler>();
+builder.Services.AddScoped<UpdateOrderDetailCommandHandler>();
+builder.Services.AddScoped<RemoveOrderDetailCommandHandler>();
+#endregion
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
